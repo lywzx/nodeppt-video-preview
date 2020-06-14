@@ -1,2 +1,2 @@
-# nodeppt-video-preview
-nodeppt 中添加视频播放
+# package-typescript-template
+quick create typescript package template
