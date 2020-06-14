@@ -1,5 +1,5 @@
 import { POP_TEMPLATE } from './pop.constant';
-import { stringToNode } from './util';
+import { stringToNode } from './util/index';
 import { Video } from './video';
 
 /**
@@ -10,7 +10,7 @@ export class Pop {
 
   private videoInstance: null | Video = null;
 
-  private whenClick = (event: Event) => {
+  private whenClick = () => {
     if (!this.videoInstance) {
       this.videoInstance = new Video(((window as any).__remote_video_url as any) as string);
       this.videoInstance.init();
